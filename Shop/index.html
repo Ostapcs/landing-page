@@ -19,8 +19,12 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css"/>
+
 
     <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="node_modules/vivus/dist/vivus.js"></script>
 
 
     <style>
@@ -104,13 +108,17 @@ display: none;"
     <div class="tab-pane " id="about" role="tabpanel"></div>
     <div class="tab-pane" id="why-we" role="tabpanel"></div>
     <div class="tab-pane" id="flowers" role="tabpanel"></div>
-    <div class="tab-pane" id="feedback" role="tabpanel"></div>
+    <div class="tab-pane" id="feedback" role="tabpanel">
+        <div>
+
+        </div>
+    </div>
 </div>
 
-<div class="scroll-to" style="margin: 0 10%">
+<div style="margin: 0 10%">
     <h1 style="margin-top: 3%;overflow: hidden;
   text-align: center;"><span>Чому ми ?</span></h1>
-    <div class="row" style="margin: 5%">
+    <div class="row scroll-to" style="margin: 5%">
         <div class="col-3">
             <svg id="f" style="background-color:#ffffff00" xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 512 512">
@@ -147,8 +155,6 @@ display: none;"
                     <path d="M363.886,148.116c-5.765-5.766-15.115-5.766-20.881,0L148.116,343.006c-5.766,5.766-5.766,15.115,0,20.881    c2.883,2.883,6.662,4.325,10.44,4.325c3.778,0,7.558-1.441,10.44-4.325l194.889-194.889    C369.653,163.231,369.653,153.883,363.886,148.116z"/>
 
 
-
-
                 </g>
             </svg>
             <div class="features">
@@ -172,7 +178,6 @@ display: none;"
                     <circle cx="106" cy="437" r="15"/>
 
 
-
                 </g>
             </svg>
             <div class="features"><h3>Якість</h3>
@@ -184,8 +189,10 @@ display: none;"
 
 
 <div class="wrapper">
-    <h1 style="margin-top: 3%;overflow: hidden;
+    <div>
+        <h1 style="margin-top: 3%;overflow: hidden;
         text-align: center;"><span>Наші букети</span></h1>
+    </div>
     <div class="container">
 
         <div class="row bouquet-row align-items-center">
@@ -237,26 +244,29 @@ display: none;"
     </div>
 </div>
 
+<!--<h1 style="margin-top: 3%;overflow: hidden;-->
+<!--        text-align: center;"><span>Відгуки</span></h1>-->
+<h1 style="margin-top: 3%;overflow: hidden;
+  text-align: center;"><span>Відгуки</span></h1>
+<div class="feed-back">
+
+    <div class="feed-back-text">Hover me and look at my border</div>
+    <div class="feed-back-text">Hover me and look at my border</div>
+    <div class="feed-back-text">Hover me and look at my border</div>
+    <div class="feed-back-text">Hover me and look at my border</div>
+    <div class="feed-back-text">Hover me and look at my border</div>
+</div>
+
+<div id="footer"></div>
 
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
 <script src="animate-svg/jquery-drawsvg.min.js"></script>
 <script src="node_modules/jquery-on-scrolled-to/on-scrolled-to.min.js"></script>
 <script src="anime-master/lib/anime.min.js"></script>
+<script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
 <script src="js/main.js"></script>
-<script>
-    let div = document.getElementById('header');
 
-    // anime({
-    //     targets: div,
-    //     translateY: 300,
-    //     duration: 2500,
-    //     delay: 500,
-    // });
-    //
-    // div.style.position = 'relative';
-
-</script>
 </body>
 
 </html>
