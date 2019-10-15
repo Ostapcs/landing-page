@@ -1,7 +1,10 @@
 $(document).ready(function () {
     const buy = $('#buy');
     const header = $("#header");
-    const scroll_to = $('.scroll-to');
+    // const scroll_to = $('.scroll-to');
+    const f = $('#f');
+    const f1 = $('#f1');
+    const f2 = $('#f2');
 
     const w = $(window).width();
     const h = $(window).height();
@@ -9,6 +12,7 @@ $(document).ready(function () {
     buy.css({left: w / 2 - buy.width() / 2 + "px"});
     header.css({left: w / 2 - header.width() / 2 + "px", top: h / 2 - header.height() / 2 + 'px', display: "block"});
 
+    adaptiveFeature(w);
 
     function adaptiveFeature(w){
         if(w < 1050){
@@ -34,9 +38,15 @@ $(document).ready(function () {
 
     }
     
-    scroll_to.onScrolledTo(0, function () {
+    f.onScrolledTo(0, function () {
         new Vivus("f", {duration : 400, type: 'sync'}).play();
+    }, 0);
+
+    f1.onScrolledTo(0, function () {
         new Vivus("f1", {duration : 400, type: 'sync'}).play(2);
+    }, 0);
+
+    f2.onScrolledTo(0, function () {
         new Vivus("f2", {duration : 400, type: 'sync'}).play();
     }, 0);
 
