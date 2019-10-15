@@ -15,7 +15,7 @@ a {
 .features{
     word-wrap: break-word;
     text-align: center;
-    /*margin-top: 10%;*/
+    margin-top: 10%;
     border-radius: 10%;
     padding: 5%;
     background-color: #e7e7e7;
@@ -60,9 +60,9 @@ a {
     /*flex: 0 0 60%;*/
     /*max-width: 60%;*/
     /*!*flex-direction: row;*!*/
-    margin: auto;
     /*margin-left: 2%;*/
     /*margin: 10% 0;*/
+    margin: auto auto 5%;
 }
 
 .row:nth-child(1) .bouquet-photo {
