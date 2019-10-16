@@ -7,7 +7,7 @@ a {
     background-image: url('../images/header2.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
+    /*position: relative;*/
     background-size: cover;
     height: 100vh;
 }
@@ -95,13 +95,23 @@ a {
 }
 
 .slick-next {
-    background-color: black !important;
+    background-color: #F6D20B !important;
     border-radius: 50%;
+    right: -20% !important;
+    width: 40px !important;
+    height: 40px !important;
 }
 
 .slick-prev{
-    background-color: black !important;
+    background-color: #F6D20B !important;
     border-radius: 50%;
+    left: -20% !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.slick-prev:before .slick-next:before {
+    opacity: .85 !important;
 }
 
 @media screen and (max-width: 1000px) {
