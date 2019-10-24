@@ -7,40 +7,24 @@ a {
     background-image: url('../images/header2.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    /*position: relative;*/
     background-size: cover;
     height: 100vh;
 }
 
+.footer{
+
+    background-color: #efefef;
+}
+
 .features{
-    word-wrap: break-word;
+    word-wrap: break-spaces;
     text-align: center;
     margin-top: 10%;
     border-radius: 10%;
     padding: 5%;
     background-color: #e7e7e7;
+    font-size: 1.3em;
 }
-
-/*h1:before,*/
-/*h1:after {*/
-/*    background-color: #000;*/
-/*    content: "";*/
-/*    display: inline-block;*/
-/*    height: 1px;*/
-/*    position: relative;*/
-/*    vertical-align: middle;*/
-/*    width: 15%;*/
-/*}*/
-
-/*h1:before {*/
-/*    right: 0.5em;*/
-/*    margin-left: -50%;*/
-/*}*/
-
-/*h1:after {*/
-/*    left: 0.5em;*/
-/*    margin-right: -50%;*/
-/*}*/
 
 .bouquet-content {
     display: flex;
@@ -81,6 +65,11 @@ a {
     padding-top: 30px;
     text-align: left;
     color: grey;
+    font-size: 1.3em;
+}
+
+.bouquet-header{
+    font-size: 3em;
 }
 
 .feed-back{
@@ -91,7 +80,8 @@ a {
 .feed-back-text {
     border: 10px solid #F6D20B;
     border-radius: 0px 40px 0px 40px;
-    padding: 2em;
+    padding: 1.7em;
+    font-size: 1.2em;
 }
 
 .slick-next {
