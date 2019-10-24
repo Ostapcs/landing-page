@@ -104,6 +104,7 @@ gulp.task('watch', async function () {
         'node_modules/jquery-on-scrolled-to/on-scrolled-to.min.js'], gulp.parallel('jquery+bootstrap'));
     gulp.watch('app/*.html', gulp.parallel('html'));
     gulp.watch('app/js/main.js', gulp.parallel('mainJS'));
+    gulp.watch('app/css/main.css', gulp.parallel('css'));
 });
 
 gulp.task('default', gulp.parallel('jquery+bootstrap', 'css', 'mainJS', 'browser-sync', 'vivus', 'slickCSS', 'aosCSS',
