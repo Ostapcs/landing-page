@@ -4,6 +4,9 @@ $(document).ready(function () {
     const f = $('#f');
     const f1 = $('#f1');
     const f2 = $('#f2');
+    const logo = $('#logo');
+    const navBar = $('#navbar');
+
 
     const w = $(window).width();
     const h = $(window).height();
@@ -12,6 +15,7 @@ $(document).ready(function () {
     header.css({left: w / 2 - header.width() / 2 + "px", top: h / 2 - header.height() / 2 + 'px', display: "block",});
 
     adaptiveFeature(w);
+    adaptiveNavBar(w);
 
     function adaptiveFeature(w) {
         if (w < 1050) {
@@ -33,7 +37,33 @@ $(document).ready(function () {
                 obj.style.display = 'none'
             })
         }
+    }
 
+    function adaptiveNavBar(w)
+    {
+        const navbarToggler = $('.navbar-toggler')[0];
+        const underNavBar = $('.navbar');
+        const collapse = $('.collapse')[0];
+        if (w < 800) {
+            logo.css({display: 'none'});
+            navBar.css({display: 'inline'});
+            underNavBar.css({display: 'flex'});
+            $('.bg-light').attr("style", "background-color :#f6d20b57 !important");
+            if(collapse.classList.contains('show')) {
+                collapse.classList.remove('show');
+                $('.navbar-toggler').attr("aria-expanded", false)[0].classList.add(('collapsed'));
+            }
+        } else {
+
+            logo.css({display: 'inline-block'});
+            navBar.css({display: 'flex'});
+            $('.bg-light').attr("style", "background-color : white !important");//"background-color", "white", "important");
+            if(!collapse.classList.contains('show')) {
+                collapse.classList.toggle('show');
+                $('.navbar-toggler').attr("aria-expanded", true)[0].classList.remove(('collapsed'));
+            }
+            underNavBar.css({display: 'none'});
+        }
     }
 
     f.onScrolledTo(0, function () {
@@ -64,6 +94,7 @@ $(document).ready(function () {
 
 
         adaptiveFeature(w);
+        adaptiveNavBar(w)
 
     });
 
